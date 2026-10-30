@@ -12,3 +12,9 @@
 DDL соответствует приложению А: 8 PK, 6 FK; вторичные индексы не создаются; выполняется ANALYZE.
 
 После загрузки исходные таблицы неизменяемы; следующие учебные изменения выполняются в схеме lab.
+
+*если слетели данные*: выполнить:
+1. `docker cp "data/olist" mosud-postgres:/tmp/import_data`
+2. `Get-Content "lab01\import.sql" -Raw | docker exec -i mosud-postgres psql -U student -d olist -f -`
+
+НЕ РЕКОМЕНДУЮ СТИРАТЬ ТОМА
