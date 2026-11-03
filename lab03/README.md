@@ -12,7 +12,8 @@
 ## 2. Выражение реляционной алгебры
 Обозначим `R = geolocation`
 $$
-Q = ρ_{zip_prefix, lat, lng, city} (
-      π_{zip_prefix, lat, lng, city} (
-        σ_{state = RJ \land -23 \le lat \le -22} (R) ) )
+\rho_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
+      \pi_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
+        \sigma_{\text{state} = \text{RJ} \land -23 \le \text{lat} \le -22} (R) ) )
 $$
+
