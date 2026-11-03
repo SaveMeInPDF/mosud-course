@@ -11,9 +11,9 @@
 
 ## 2. Выражение реляционной алгебры
 Обозначим `R = geolocation`
-$$
+```math
 \rho_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
       \pi_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
         \sigma_{\text{state} = \text{RJ} \land -23 \le \text{lat} \le -22} (R) ) )
-$$
+```
 
