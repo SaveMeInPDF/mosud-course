@@ -20,5 +20,8 @@
 ```math
 Q' = \rho(\pi(\sigma_{state = RJ} (\sigma_{-23 \le lat \le -22} (R))))
 ```
-
+С ранней проекцией
+```math
+Q'' = \rho(\sigma_{state = RJ \land (-23 \le lat \le -22)}(\pi_{zip\_prefix, lat, lng, city}))
+```
 ## 3. Дубликаты и эквивалентность
