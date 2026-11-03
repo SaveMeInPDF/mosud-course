@@ -1,7 +1,7 @@
 # Практическая работа № 3. Вариант 8
 
 **Отношение:** `geolocation`  
-**Предикат:** `state=RJ` и `-23 <= lat <= -22`  
+**Предикат:** `state=RJ` и ```math -23 \le lat \le -22```  
 **Проекция:** `zip_prefix, lat, lng, city`
 
 ## 1. Исходное отношение и атрибуты
@@ -12,8 +12,13 @@
 ## 2. Выражение реляционной алгебры
 Обозначим `R = geolocation`
 ```math
-\rho_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
+\text{Q} = \rho_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
       \pi_{\text{zip\_prefix}, \text{lat}, \text{lng}, \text{city}} (
         \sigma_{\text{state} = \text{RJ} \land -23 \le \text{lat} \le -22} (R) ) )
 ```
+С двумя выборками
+```math
+Q' = \rho(\pi(\sigma_{state = RJ} (\sigma_{-23 \le lat \le -22} (R))))
+```
 
+## 3. Дубликаты и эквивалентность
