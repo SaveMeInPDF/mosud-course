@@ -4,5 +4,5 @@
 
 ## Композиция операций для основного запроса
 ```math
-Customers \not\ltimes (Reviews \bowtie_{rid=oid} Orders)
+Customers \notin (Reviews \ltimes_{rid=oid} Orders)
 ```
